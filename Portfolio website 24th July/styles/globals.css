@@ -1,0 +1,534 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 14px;
+  --background: #ffffff;
+  --foreground: oklch(0.145 0 0);
+  --card: #ffffff;
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #030213;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: transparent;
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: #030213;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Text size variables */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+
+  /* Ensure all elements respect container bounds */
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+}
+
+/* Base typography - only applied when no Tailwind text classes are present */
+@layer base {
+  :where(:not([class*="text-"])) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.6;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input, textarea {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+/* Responsive layout system */
+@layer base {
+  /* Mobile-first approach */
+  .responsive-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Tablet and up */
+  @media (min-width: 640px) {
+    .responsive-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  /* Desktop and up */
+  @media (min-width: 1024px) {
+    .responsive-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+/* Desktop sidebar fixed positioning */
+@media (min-width: 768px) {
+  .desktop-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 16rem; /* 64 * 0.25rem = 16rem */
+    z-index: 40;
+  }
+  
+  /* Ensure main content doesn't overflow on smaller desktop screens */
+  .main-content-desktop {
+    margin-left: 16rem;
+    width: calc(100% - 16rem);
+    max-width: calc(100% - 16rem);
+    overflow-x: hidden;
+  }
+}
+
+/* Mobile menu animations and responsive behavior */
+@media (max-width: 767px) {
+  .mobile-menu {
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Prevent horizontal scroll on mobile when menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+  
+  /* Ensure main content takes full width on mobile */
+  .main-content-mobile {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* Responsive section spacing */
+@layer utilities {
+  .section-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .section-padding {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+/* Utility classes for smooth transitions */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Ensure proper layout for main content */
+main {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Sections should respect container bounds */
+section {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Container utility for consistent max-width */
+.content-container {
+  width: 100%;
+  max-width: 64rem; /* max-w-4xl equivalent */
+  margin: 0 auto;
+}
+
+/* Responsive grid and flex utilities */
+.responsive-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .responsive-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-grid {
+    gap: 2rem;
+  }
+}
+
+/* Contact card responsive utilities */
+@layer utilities {
+  .contact-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 640px) {
+    .contact-card-grid {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .contact-card-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 32rem; /* max-w-2xl */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-card-grid {
+      gap: 2rem;
+    }
+  }
+  
+  /* Ensure contact cards don't become too wide on large screens */
+  .contact-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0; /* Allow flex shrinking */
+  }
+  
+  @media (min-width: 768px) {
+    .contact-card {
+      max-width: 15rem; /* Reasonable max width per card */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-card {
+      max-width: 16rem;
+    }
+  }
+}
+
+/* Image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Case study image containers - preserve natural dimensions */
+@layer utilities {
+  .case-study-image-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.75rem; /* rounded-xl */
+    background-color: var(--color-muted);
+  }
+  
+  .case-study-full-image-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.5rem; /* rounded-lg */
+    background-color: var(--color-muted);
+  }
+  
+  .case-study-hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 80vh; /* Reasonable max height for hero images */
+    border-radius: 0.75rem; /* rounded-xl */
+  }
+  
+  .case-study-content-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 60vh; /* Reasonable max height for content images */
+    border-radius: 0.5rem; /* rounded-lg */
+  }
+  
+  .case-study-full-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 70vh; /* Allow larger images for full-width displays */
+    border-radius: 0.5rem; /* rounded-lg */
+  }
+  
+  /* Mobile responsive adjustments for case study images */
+  @media (max-width: 640px) {
+    .case-study-hero-image {
+      max-height: 50vh;
+    }
+    
+    .case-study-content-image {
+      max-height: 40vh;
+    }
+    
+    .case-study-full-image {
+      max-height: 45vh;
+    }
+  }
+  
+  /* Tablet responsive adjustments */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .case-study-hero-image {
+      max-height: 60vh;
+    }
+    
+    .case-study-content-image {
+      max-height: 50vh;
+    }
+    
+    .case-study-full-image {
+      max-height: 55vh;
+    }
+  }
+  
+  /* Large desktop adjustments */
+  @media (min-width: 1025px) {
+    .case-study-hero-image {
+      max-height: 70vh;
+    }
+    
+    .case-study-content-image {
+      max-height: 55vh;
+    }
+    
+    .case-study-full-image {
+      max-height: 65vh;
+    }
+  }
+  
+  /* Ensure images never overflow their containers */
+  .case-study-image-container img,
+  .case-study-full-image-container img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Special handling for very wide images */
+  @media (min-width: 1200px) {
+    .case-study-full-image-container {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Prevent text overflow */
+.text-content {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
