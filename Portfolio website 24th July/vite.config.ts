@@ -1,10 +1,26 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+// Plugin to map figma assets to a placeholder image so the build doesn't fail
+function figmaAssetPlugin() {
+  return {
+    name: 'figma-assets',
+    resolveId(source: string) {
+      if (source.startsWith('figma:asset/')) {
+        return path.resolve(__dirname, 'assets/placeholder.png')
+      }
+    },
+  }
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  base: './',
+  plugins: [figmaAssetPlugin(), react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './'),
