@@ -51,9 +51,8 @@ npm run dev
 npm run build
 ```
 
-The built files will be in the `dist` directory.
-
-### Preview Production Build
+The built files will be in the `dist` directory. You can open
+`dist/index.html` directly in your browser or use the preview server:
 
 ```bash
 npm run preview
