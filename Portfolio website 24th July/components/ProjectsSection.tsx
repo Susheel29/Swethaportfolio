@@ -4,6 +4,9 @@ import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Zooplus from './figma/zooplus1.png';
+import Dhldrax from './figma/dhldrax2.png';
+import Yallafinance from './figma/yallafinance3.png';
+import Nymble from './figma/nymble4.png';
 import image_7714b904bfe9bd5bf360c89d6cb7771ec6f430e7 from 'figma:asset/7714b904bfe9bd5bf360c89d6cb7771ec6f430e7.png';
 import image_d53c3b51c232a06a42df6309791396c831c4da07 from 'figma:asset/d53c3b51c232a06a42df6309791396c831c4da07.png';
 import image_c4672df7d52b05f07dc0bddb2bdba50a04ae0f79 from 'figma:asset/c4672df7d52b05f07dc0bddb2bdba50a04ae0f79.png';
@@ -32,7 +35,7 @@ export function ProjectsSection({ onViewCaseStudy }: ProjectsSectionProps) {
       id: 'drax',
       title: 'DRAX: Seamless Global Logistics Through Unified Planning ',
       description: 'Designed comprehensive B2B platform empowering planners to efficiently manage shipments. Synthesized insights from in-depth research into existing tools with high-fidelity prototypes.',
-      image: image_2154f359bef181ed1b642d62c2553b857f910669,
+      image: Dhldrax,
       tags: ['B2B Platform', 'Information Architecture', 'Journey Mapping', 'User Studies'],
       type: 'Enterprise Solution',
       metrics: ['Global Logistics Scale', 'MOSCOW Workshops', 'End-to-End UX Process']
@@ -41,7 +44,7 @@ export function ProjectsSection({ onViewCaseStudy }: ProjectsSectionProps) {
       id: 'youth-banking',
       title: 'Youth Banking in Jordan: Digital Experiences for Gen Z',
       description: 'Crafted mobile-first digital banking solution specifically for 18-25 year olds. Conducted thorough research, client workshops, and complete UX design process from wireframing to prototyping.',
-      image: image_c0a8de79336440b149ef09f60b5715a7d1a3617d,
+      image: Yallafinance,
       tags: ['Mobile-First Design', 'UX for GenZ', 'Digital Banking', 'User Interviews'],
       type: 'FinTech',
       metrics: ['18-25 Target Demographic', 'Mobile-First Approach', 'Complete UX Process']
@@ -50,7 +53,7 @@ export function ProjectsSection({ onViewCaseStudy }: ProjectsSectionProps) {
       id: 'nymble',
       title: 'Nymble (now Posha) Bot: Enhancing HMI & Mobile Experiences',
       description: 'Led intuitive HMI and mobile app design, updating Recipe Editor with 600+ new recipes and designing Session Analyser. Established user-centric design process with seamless information architecture.',
-      image: image_7714b904bfe9bd5bf360c89d6cb7771ec6f430e7,
+      image: Nymble,
       tags: ['HMI Design', 'Mobile User Experience', 'IoT Interface', 'Information Architecture'],
       type: 'Product Design',
       metrics: ['40% ↓ Session Setup Time', '600+ New Recipes Enabled', 'Increased User Satisfaction']
