@@ -6,13 +6,13 @@ import { ArrowLeft, Calendar, Users, Target, TrendingUp, Search, BarChart3, Mess
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 import { OtherCaseStudies } from '../OtherCaseStudies';
 import exampleImage from 'figma:asset/caa4cfcfce9c6439138c716263070ea7e36b36d6.png';
-import kickoffImage from 'figma:asset/3bd19fa78a03c6bafe8251245da695b5a27784cd.png';
+import kickoffImage from '../figma/workshopactivitiesandprocess3.png';
 import interviewsImage from 'figma:asset/2a0dd07c56f0235f59ba103acc04c88728efd244.png';
-import definitionImage from 'figma:asset/700c8ca3bed787c77efccb303d389d0007af9b2f.png';
-import mvpImage from 'figma:asset/6594c27bc39846c62a387105f20c868a6c778dd8.png';
-import image_c0a8de79336440b149ef09f60b5715a7d1a3617d from 'figma:asset/c0a8de79336440b149ef09f60b5715a7d1a3617d.png';
-import image_8183a527f56abb433da4c87d1940c4e88f12a3ac from 'figma:asset/8183a527f56abb433da4c87d1940c4e88f12a3ac.png';
-import riseAwardImage from 'figma:asset/5506904eb21c2036db970339b06b6d4b9241c753.png';
+import definitionImage from '../figma/designbriefanddevelopment4.png';
+import mvpImage from '../figma/finalmvpdesign5.png';
+import image_c0a8de79336440b149ef09f60b5715a7d1a3617d from '../figma/yallafinance3.png';
+import image_8183a527f56abb433da4c87d1940c4e88f12a3ac from '../figma/exploratoryresearch2.png';
+import riseAwardImage from '../figma/recognition6.png';
 
 interface YouthBankingCaseStudyProps {
   onBackToPortfolio: () => void;
