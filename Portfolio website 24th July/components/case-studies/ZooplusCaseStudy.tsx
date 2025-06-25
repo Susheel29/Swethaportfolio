@@ -4,16 +4,17 @@ import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
 import { ArrowLeft, Calendar, Users, Target, TrendingUp, Eye, TestTube, RefreshCw } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import image_282acdecaa201525d4eda29f5375a1c262fb4bac from 'figma:asset/282acdecaa201525d4eda29f5375a1c262fb4bac.png';
-import layoutOptionsImage from 'figma:asset/e09b4e207fc07a33d9dba8f907f6a15704264450.png';
-import contentPrioritizationImage from 'figma:asset/59667f318a73cc951718ed9d34784a57e7ed9640.png';
+import Zooplus from './figma/zooplus.png';
+import compbench from './figma/competittivebenchmarking2.png';
+import layoutOptionsImage from './figma/layoutexploration4.png';
+import contentPrioritizationImage from './figma/unifiedcardsystem5.png';
 import heroImage from 'figma:asset/456d1f913ffb11d7adc9130d84899bf3b056e65a.png';
 import finalDesignImage from 'figma:asset/2888b50de4417ac5a8624fe0217e76da0a0f491c.png';
-import ideationImage from 'figma:asset/f7d3a24c8b05e5b5e5d7acdae1d2b7c7b1c5f3a1.png';
+import ideationImage from './figma/ideation3.png';
 import designIterationsImage from 'figma:asset/34ddf32434c5a4e8def7d298b1a0c2b971af4504.png';
 import layoutAnalysisImage from 'figma:asset/05f367bbb92baea082d00103b84e86c412c7d380.png';
-import desktopFinalImage from 'figma:asset/060a85da8b8a482f862917ff0abff7b19e0fdc04.png';
-import mobileFinalImage from 'figma:asset/ad0b86cf244bd29ddcf1d675c639f9c387629712.png';
+import desktopFinalImage from './figma/desktopimplementation6.png';
+import mobileFinalImage from './figma/mobileimplementation7.png';
 
 import { OtherCaseStudies } from '../OtherCaseStudies';
 
@@ -76,7 +77,7 @@ export function ZooplusCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCa
             {/* Hero Image - Flexible container that adapts to image dimensions */}
             <div className="case-study-image-container">
               <ImageWithFallback
-                src={heroImage}
+                src={Zooplus}
                 alt="Zooplus E-commerce Product Listings"
                 className="case-study-hero-image"
               />
@@ -201,7 +202,7 @@ export function ZooplusCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCa
               {/* Competitive Analysis Image - Flexible container */}
               <div className="case-study-image-container">
                 <ImageWithFallback
-                  src={image_282acdecaa201525d4eda29f5375a1c262fb4bac}
+                  src={compbench}
                   alt="Competitive Analysis Process"
                   className="case-study-content-image"
                 />
