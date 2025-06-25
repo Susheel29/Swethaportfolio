@@ -39,7 +39,7 @@ export function HeroSection({ onViewProjects }: HeroSectionProps) {
             <Calendar className="h-5 w-5 text-primary" />
           </div>
           <div>
-            <div className="text-2xl">4+</div>
+            <div className="text-2xl">3+</div>
             <div className="text-sm text-muted-foreground">Years Experience</div>
           </div>
         </div>
