@@ -18,13 +18,13 @@ import keyScreens1 from '../figma/keyscreens8.png';
 import keyScreens2 from '../figma/keyscreens9.png';
 import keyScreens3 from '../figma/keyscreens10.png';
 import learningsImage from '../figma/learnings11.png';
-import recipeVisualizerImage from '../figma/learnings11.png';
-import detailedUserPersonaImage from '../figma/learnings11.png';
-import empathyMapImage from 'figma:asset/7df2c226a139a3e5f5c7b90737c8ade0cb768bbf.png';
-import rapidPrototypingImage from 'figma:asset/3dc613bd8f897d51ac7303c1ee004ff919584256.png';
-import highFidelityPrototype1 from 'figma:asset/3b143bf1603da6e60a980bf9c19aa2113b0e7ad0.png';
-import highFidelityPrototype2 from 'figma:asset/b0b9328252c19f244b16285bb620309ba1a7b871.png';
-import highFidelityPrototype3 from 'figma:asset/30d4124350da0789accafc2e1a94db788eac8868.png';
+import recipeVisualizerImage from '../figma/therecipevisualiser1.png';
+import detailedUserPersonaImage from '../figma/userpersona2.png';
+import empathyMapImage from '../figma/Empathymapandcjm3.png';
+import rapidPrototypingImage from '../figma/rapidprototyping4.png';
+import highFidelityPrototype1 from '../figma/highfidwireframes5.png';
+import highFidelityPrototype2 from '../figma/highfidwireframes6.png';
+import highFidelityPrototype3 from '../figma/highfidwireframes7-1.png';
 import { OtherCaseStudies } from '../OtherCaseStudies';
 
 interface NymbleCaseStudyProps {
