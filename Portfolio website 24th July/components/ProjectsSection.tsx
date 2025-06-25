@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Zooplus from './figma/zooplus.png';
 import Dhldrax from './figma/dhldrax.png';
-import Yallafinance from './figma/yallafinance.png';
+import Yallafinance from './figma/yallafinance3.png';
 import Nymble from './figma/nymble.png';
 import image_7714b904bfe9bd5bf360c89d6cb7771ec6f430e7 from 'figma:asset/7714b904bfe9bd5bf360c89d6cb7771ec6f430e7.png';
 import image_d53c3b51c232a06a42df6309791396c831c4da07 from 'figma:asset/d53c3b51c232a06a42df6309791396c831c4da07.png';
