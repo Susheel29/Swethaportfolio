@@ -4,11 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Badge } from '../ui/badge';
 import { ArrowLeft, Calendar, Users, Target, TrendingUp, Eye, TestTube, RefreshCw } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
-import Zooplus from './figma/zooplus.png';
 import compbench from './figma/competittivebenchmarking2.png';
 import layoutOptionsImage from './figma/layoutexploration4.png';
 import contentPrioritizationImage from './figma/unifiedcardsystem5.png';
-import heroImage from 'figma:asset/456d1f913ffb11d7adc9130d84899bf3b056e65a.png';
+import heroImage from './figma/zooplus.png';
 import finalDesignImage from 'figma:asset/2888b50de4417ac5a8624fe0217e76da0a0f491c.png';
 import ideationImage from './figma/ideation3.png';
 import designIterationsImage from 'figma:asset/34ddf32434c5a4e8def7d298b1a0c2b971af4504.png';
@@ -77,7 +76,7 @@ export function ZooplusCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCa
             {/* Hero Image - Flexible container that adapts to image dimensions */}
             <div className="case-study-image-container">
               <ImageWithFallback
-                src={Zooplus}
+                src={heroImage}
                 alt="Zooplus E-commerce Product Listings"
                 className="case-study-hero-image"
               />
