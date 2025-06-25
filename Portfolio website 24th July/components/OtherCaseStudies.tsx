@@ -3,6 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
+import Zooplus from './figma/zooplus.png';
+import Dhldrax from './figma/dhldrax.png';
+import Nymble from './figma/nymble.png';
+import Yalla from './figma/yallafinance3.png';
 import image_7714b904bfe9bd5bf360c89d6cb7771ec6f430e7 from 'figma:asset/7714b904bfe9bd5bf360c89d6cb7771ec6f430e7.png';
 import image_2154f359bef181ed1b642d62c2553b857f910669 from 'figma:asset/2154f359bef181ed1b642d62c2553b857f910669.png';
 import image_c0a8de79336440b149ef09f60b5715a7d1a3617d from 'figma:asset/c0a8de79336440b149ef09f60b5715a7d1a3617d.png';
@@ -20,7 +24,7 @@ export function OtherCaseStudies({ currentCaseStudyId, onViewCaseStudy }: OtherC
       id: 'zooplus',
       title: 'Enhancing Pet E-commerce Experience at Zooplus',
       description: 'Led Catalog UX optimization for Shopping and Order management, focusing on Product Listing and Search Results. End-to-end UX process including research, testing, and prototyping.',
-      image: image_456d1f913ffb11d7adc9130d84899bf3b056e65a,
+      image: Zooplus,
       tags: ['E-commerce UX', 'User Research', 'A/B Testing', 'Wireframing'],
       type: 'E-commerce',
       metrics: ['€80K Value Generated', '€1.3M Projected Annual Impact', 'Cross-functional Leadership']
@@ -29,7 +33,7 @@ export function OtherCaseStudies({ currentCaseStudyId, onViewCaseStudy }: OtherC
       id: 'drax',
       title: 'DRAX: Unifying Planning for Global Logistics',
       description: 'Designed comprehensive B2B platform empowering planners to efficiently manage shipments. Synthesized insights from in-depth research into existing tools with high-fidelity prototypes.',
-      image: image_2154f359bef181ed1b642d62c2553b857f910669,
+      image: Dhldrax,
       tags: ['B2B Platform', 'Information Architecture', 'Journey Mapping', 'User Studies'],
       type: 'Enterprise Solution',
       metrics: ['Global Logistics Scale', 'MOSCOW Workshops', 'End-to-End UX Process']
@@ -38,7 +42,7 @@ export function OtherCaseStudies({ currentCaseStudyId, onViewCaseStudy }: OtherC
       id: 'youth-banking',
       title: 'Youth Banking: Digital Experience for Gen Z',
       description: 'Crafted mobile-first digital banking solution specifically for 18-25 year olds. Conducted thorough research, client workshops, and complete UX design process from wireframing to prototyping.',
-      image: image_c0a8de79336440b149ef09f60b5715a7d1a3617d,
+      image: Yalla,
       tags: ['Mobile-First Design', 'Gen Z UX', 'Digital Banking', 'User Interviews'],
       type: 'FinTech',
       metrics: ['18-25 Target Demographic', 'Mobile-First Approach', 'Complete UX Process']
@@ -47,7 +51,7 @@ export function OtherCaseStudies({ currentCaseStudyId, onViewCaseStudy }: OtherC
       id: 'nymble',
       title: 'Nymble Bot: Enhancing HMI & Mobile Experiences',
       description: 'Led intuitive HMI and mobile app design, updating Recipe Editor with 600+ new recipes and designing Session Analyser. Established user-centric design process with seamless information architecture.',
-      image: image_7714b904bfe9bd5bf360c89d6cb7771ec6f430e7,
+      image: Nymble,
       tags: ['HMI Design', 'Mobile User Experience', 'IoT Interface', 'Information Architecture'],
       type: 'Product Design',
       metrics: ['40% ↓ Session Setup Time', '600+ New Recipes Enabled', 'Increased User Satisfaction']
