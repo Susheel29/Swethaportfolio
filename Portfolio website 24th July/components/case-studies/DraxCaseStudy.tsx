@@ -5,13 +5,13 @@ import { Badge } from '../ui/badge';
 import { ArrowLeft, Calendar, Users, Target, TrendingUp, Search, BarChart3, MessageSquare, User, Settings, Truck, Award } from 'lucide-react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 import { OtherCaseStudies } from '../OtherCaseStudies';
-import image_2154f359bef181ed1b642d62c2553b857f910669 from 'figma:asset/2154f359bef181ed1b642d62c2553b857f910669.png';
-import image_89d6df235a7a194e907889e94a4e1a43e5d33eba from 'figma:asset/89d6df235a7a194e907889e94a4e1a43e5d33eba.png';
-import image_70df52cbe47ef4e428131cfda8f862961b5cad3d from 'figma:asset/70df52cbe47ef4e428131cfda8f862961b5cad3d.png';
-import image_d538bb12f8cf0ad226d092dd562437eb0e90b990 from 'figma:asset/d538bb12f8cf0ad226d092dd562437eb0e90b990.png';
-import image_1d7fcdb1422daa0063616a3f8e0e97568551c7e5 from 'figma:asset/1d7fcdb1422daa0063616a3f8e0e97568551c7e5.png';
-import image_6f69c5567413d5702ad72f50c2777e38cddc83ce from 'figma:asset/6f69c5567413d5702ad72f50c2777e38cddc83ce.png';
-import instaAwardImage from 'figma:asset/b4430d0abacdaedd86c738cc27be49078c4ce292.png';
+import dhldrax from '../figma/dhldrax.png';
+import research from '../figma/researchprocessandfindings2.png';
+import journey from '../figma/journeyanalysis3.png';
+import ideate from '../figma/ideate4.png';
+import moscow from '../figma/moscowworkshop5.png';
+import final from '../figma/finalproductinterface6.png';
+import instaAwardImage from '../figma/certificate7.png';
 
 interface DraxCaseStudyProps {
   onBackToPortfolio: () => void;
@@ -70,7 +70,7 @@ export function DraxCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCaseS
             
             <div className="aspect-video rounded-xl overflow-hidden">
               <ImageWithFallback
-                src={image_2154f359bef181ed1b642d62c2553b857f910669}
+                src={dhldrax}
                 alt="DRAX Dispatch Route Allocation System Interface"
                 className="w-full h-full object-cover"
               />
@@ -184,7 +184,7 @@ export function DraxCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCaseS
               <h3 className="text-2xl">Research Process & Findings</h3>
               <div>
                 <ImageWithFallback
-                  src={image_89d6df235a7a194e907889e94a4e1a43e5d33eba}
+                  src={research}
                   alt="DRAX Discovery Phase - User Journey Maps and Interview Analysis showing cross-regional planner workflows and task groupings"
                   className="w-full"
                 />
@@ -296,7 +296,7 @@ export function DraxCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCaseS
               <h3 className="text-2xl">Journey Analysis & Core Functionality</h3>
               <div className="space-y-4">
                 <ImageWithFallback
-                  src={image_70df52cbe47ef4e428131cfda8f862961b5cad3d}
+                  src={journey}
                   alt="DRAX Define Phase - User Journey Analysis and Core Functionality Mapping showing synthesis of regional planning workflows"
                   className="w-full"
                 />
@@ -409,7 +409,7 @@ export function DraxCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCaseS
               <h3 className="text-2xl">Golden Thread & Wireframe Development</h3>
               <div className="space-y-4">
                 <ImageWithFallback
-                  src={image_d538bb12f8cf0ad226d092dd562437eb0e90b990}
+                  src={ideate}
                   alt="DRAX Ideate Phase - Golden Thread User Flow and Wireframe Development showing efficient planning workflows"
                   className="w-full"
                 />
@@ -561,7 +561,7 @@ export function DraxCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCaseS
               <h3 className="text-2xl">MOSCOW Workshop & Use Case Development</h3>
               <div className="space-y-4">
                 <ImageWithFallback
-                  src={image_1d7fcdb1422daa0063616a3f8e0e97568551c7e5}
+                  src={moscow}
                   alt="DRAX Product Development - MOSCOW Workshop and Use Case Tables showing requirement prioritization and concept simplification"
                   className="w-full"
                 />
@@ -577,7 +577,7 @@ export function DraxCaseStudy({ onBackToPortfolio, onViewCaseStudy, currentCaseS
               <h3 className="text-2xl">Final Product Interface</h3>
               <div className="space-y-4">
                 <ImageWithFallback
-                  src={image_6f69c5567413d5702ad72f50c2777e38cddc83ce}
+                  src={final}
                   alt="DRAX Final Product - Dispatch Route Allocation System showing logistics planning dashboard with shipment management and route optimization features"
                   className="w-full rounded-lg border"
                 />
