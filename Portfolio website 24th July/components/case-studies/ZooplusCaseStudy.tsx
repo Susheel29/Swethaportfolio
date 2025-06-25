@@ -13,7 +13,7 @@ import ideationImage from '../figma/ideation3.png';
 import designIterationsImage from 'figma:asset/34ddf32434c5a4e8def7d298b1a0c2b971af4504.png';
 import layoutAnalysisImage from 'figma:asset/05f367bbb92baea082d00103b84e86c412c7d380.png';
 import desktopFinalImage from '../figma/desktopimplementation6.png';
-import mobileFinalImage from '../figma/mobileimplementation7.png';
+import mobileFinalImage from '../figma/mobile.png';
 
 import { OtherCaseStudies } from '../OtherCaseStudies';
 
