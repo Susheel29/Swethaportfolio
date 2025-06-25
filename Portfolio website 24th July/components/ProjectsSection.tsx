@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
-import image_7714b904bfe9bd5bf360c89d6cb7771ec6f430e7 from 'figma:asset/7714b904bfe9bd5bf360c89d6cb7771ec6f430e7.png';
+import { Zooplus } from './assets/1 Zooplus.png';
 import image_d53c3b51c232a06a42df6309791396c831c4da07 from 'figma:asset/d53c3b51c232a06a42df6309791396c831c4da07.png';
 import image_c4672df7d52b05f07dc0bddb2bdba50a04ae0f79 from 'figma:asset/c4672df7d52b05f07dc0bddb2bdba50a04ae0f79.png';
 import image_9a5715e15a3ecfbfaf60ff59a8b33b7536c49c07 from 'figma:asset/9a5715e15a3ecfbfaf60ff59a8b33b7536c49c07.png';
@@ -22,7 +22,7 @@ export function ProjectsSection({ onViewCaseStudy }: ProjectsSectionProps) {
       id: 'zooplus',
       title: 'Enhancing Pet E-commerce Experiences at Zooplus - Article based product listing',
       description: 'Led Catalog UX optimization for Shopping and Order management, focusing on Product Listing and Search Results. End-to-end UX process including research, testing, and prototyping.',
-      image: image_456d1f913ffb11d7adc9130d84899bf3b056e65a,
+      image: Zooplus,
       tags: ['E-commerce User Experience', 'User Research', 'A/B Testing', 'Wireframing'],
       type: 'E-commerce',
       metrics: ['€80K Value Generated', '€1.3M Projected Annual Impact', 'Client Leadership Collaboration']
